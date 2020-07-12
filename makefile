@@ -5,14 +5,15 @@ OPT=-Wall
 
 all : main
 
-main : main.o matrix.o
-	$(CC) -o final $(OPT) main.o matrix.o -lm
+main : main.o kernel.o
+	$(CC) -o main $(OPT) main.o kernel.o
 
 main.o : main.cpp
 	$(CC) -c $(OPT) main.cpp
 
-matrix.o : matrix.cpp
-	$(CC) -c $(OPT) matrix.cpp
+kernel.o : kernel.cpp
+	$(CC) -c $(OPT) kernel.cpp
+
 
 # ======
 # Clean
