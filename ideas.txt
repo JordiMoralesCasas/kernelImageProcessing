@@ -1,0 +1,6 @@
+./program "filename.png"
+
+Shows menu:
+    Decide which filter apply (blur, edge detection, gaussian blur, etc..)
+    Enter different convolution matrix (Matrix size can be chosen)
+    Exit program
